@@ -1,25 +1,8 @@
-KNIME feature for all 3D-e-Chem nodes.
-Also contains 3D-e-Chem KNIME node category and splash screen. 
+3D-e-Chem KNIME plugin for project category and splash screen.
 
 [![Build Status](https://travis-ci.org/3D-e-Chem/knime-3d-e-chem.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-3d-e-chem)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
-
-# Installation of 3D-e-Chem KNIME nodes
-
-Requirements:
-
-* KNIME, https://www.knime.org, version 3.1 or higher
-
-Steps to get the 3D-e-Chem nodes inside KNIME:
-
-1. Goto Help > Install new software ... menu
-2. Press add button
-3. Fill text fields with https://3d-e-chem.github.io/updates.
-4. Select --all sites-- in `work with` pulldown
-5. Select `3D-e-Chem KNIME nodes`
-6. Install software
-7. Restart KNIME
 
 # Adding a KNIME node
 
@@ -52,7 +35,7 @@ Steps to get development environment setup:
 1. Download KNIME SDK from https://www.knime.org/downloads/overview
 2. Install/Extract/start KNIME SDK
 3. Start SDK
-4. Install m2e (Maven integration for Eclipse) 
+4. Install m2e (Maven integration for Eclipse)
 
     1. Goto Help > Install new software ...
     2. Make sure Update site is http://update.knime.org/analytics-platform/3.1 and https://3d-e-chem.github.io/updates are in the pull down list otherwise add it

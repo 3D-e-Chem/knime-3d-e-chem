@@ -4,3 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
+
+## [1.0.1] - 2016-09-29
+
+### Removed
+
+- Moved feature with all project nodes to https://github.com/3D-e-Chem/knime-node-collection repo
+
+## [1.0.0] - 2016-07-14
+
+Initial release
