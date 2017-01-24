@@ -49,13 +49,15 @@ During import the Tycho Eclipse providers must be installed.
 
 # New release
 
-1. Make sure all included features are up to date on https://3d-e-chem.github.io/updates
-2. Update versions in pom files with `mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<version>` command.
-3. Commit and push changes
-4. Create package with `mvn package`, will create update site in `p2/target/repository`
-5. Append new release to an update site
+1. Update versions in pom files with `mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<version>` command.
+2. Commit and push changes
+3. Create package with `mvn package`, will create update site in `p2/target/repository`
+4. Append new release to an update site
 
   1. Make clone of an update site repo
   2. Append release to the update site with `mvn install -Dtarget.update.site=<path to update site>`
 
-6. Commit and push changes in this repo and update site repo.
+5. Commit and push changes in this repo and update site repo.
+6. Make nodes available to 3D-e-Chem KNIME feature by following steps at https://github.com/3D-e-Chem/knime-node-collection#new-release
+
+
