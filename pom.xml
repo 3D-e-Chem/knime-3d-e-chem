@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.esciencecenter.e3dchem</groupId>
 	<artifactId>nl.esciencecenter.e3dchem</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -27,32 +27,13 @@
 	</prerequisites>
 
 	<properties>
-		<knime.version>3.2</knime.version>
-		<knime.update.site>http://update.knime.org/analytics-platform/${knime.version}/</knime.update.site>
-		<knime.community.trusted.update.site>http://update.knime.org/community-contributions/trusted/${knime.version}/</knime.community.trusted.update.site>
-		<tycho.version>0.26.0</tycho.version>
-		<tycho.extras.version>0.26.0</tycho.extras.version>
+		<tycho.version>1.4.0</tycho.version>
+		<tycho.extras.version>1.4.0</tycho.extras.version>
 		<tycho.test.jvmArgs>-Xmx512m</tycho.test.jvmArgs>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<target.file>KNIME-AP-4.0</target.file>
 	</properties>
-	<repositories>
-		<repository>
-			<id>knime</id>
-			<layout>p2</layout>
-			<url>${knime.update.site}</url>
-		</repository>
-		<repository>
-			<id>knime trusted community</id>
-			<layout>p2</layout>
-			<url>${knime.community.trusted.update.site}</url>
-		</repository>
-		<repository>
-			<id>3d-e-chem</id>
-			<layout>p2</layout>
-			<url>https://3d-e-chem.github.io/updates</url>
-		</repository>
-	</repositories>
 	<build>
 		<plugins>
 			<plugin>
@@ -65,6 +46,16 @@
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho.version}</version>
+				<configuration>
+					<target>
+						<artifact>
+							<groupId>nl.esciencecenter.e3dchem</groupId>
+							<artifactId>nl.esciencecenter.e3dchem.targetplatform</artifactId>
+							<version>${project.version}</version>
+							<classifier>${target.file}</classifier>
+						</artifact>
+					</target>
+				</configuration>
 			</plugin>
 		</plugins>
 		<pluginManagement>
@@ -107,5 +98,6 @@
 	<modules>
 		<module>plugin</module>
 		<module>p2</module>
+		<module>targetplatform</module>
 	</modules>
 </project>
