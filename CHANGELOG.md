@@ -5,10 +5,11 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.0.2] - 2023-11-20
 
 ### Changes
 
- - Requires KNIME 4.0
+ - Requires KNIME 5.1
 
 ## [1.0.1] - 2016-09-29
 
