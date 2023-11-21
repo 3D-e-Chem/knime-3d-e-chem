@@ -1,5 +1,7 @@
 3D-e-Chem KNIME plugin for project category and splash screen.
 
+[![Java CI with Maven](https://github.com/3D-e-Chem/knime-3d-e-chem/actions/workflows/ci.yml/badge.svg)](https://github.com/3D-e-Chem/knime-3d-e-chem/actions/workflows/ci.yml)
+
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
 # Adding a KNIME node
