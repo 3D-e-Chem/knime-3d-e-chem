@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.esciencecenter.e3dchem</groupId>
 	<artifactId>nl.esciencecenter.e3dchem</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -27,12 +27,14 @@
 	</prerequisites>
 
 	<properties>
-		<tycho.version>1.4.0</tycho.version>
-		<tycho.extras.version>1.4.0</tycho.extras.version>
+		<tycho.version>2.7.5</tycho.version>
+		<tycho.extras.version>${tycho.version}</tycho.extras.version>
 		<tycho.test.jvmArgs>-Xmx512m</tycho.test.jvmArgs>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<target.file>KNIME-AP-4.0</target.file>
+		<knime.version>5.1</knime.version>
+		<knime.version>5.1</knime.version>
+		<target.file>KNIME-AP-${knime.version}</target.file>
 	</properties>
 	<build>
 		<plugins>
@@ -73,10 +75,6 @@
 					</dependencies>
 					<configuration>
 						<timestampProvider>jgit</timestampProvider>
-						<jgit.ignore>
-							pom.xml
-						</jgit.ignore>
-						<jgit.dirtyWorkingTree>ignore</jgit.dirtyWorkingTree>
 					</configuration>
 				</plugin>
 			</plugins>

@@ -14,7 +14,7 @@ For node developers which want
 
 Can respectively been done by
 
-0. Add https://3d-e-chem.github.io/updates to list of repositories or p2 update sites (in pom.xml)
+0. Add https://3d-e-chem.github.io/updates/5.1 to list of repositories or p2 update sites (in pom.xml)
 1. Plugin of node must depend on `nl.esciencecenter.e3dchem.plugin` (in plugin/META-INF/MANIFEST.MF)
 2. Node category must be have `/community/3d-e-chem` as path (in category extension in plugin/plugin.xml file)
 3. Node feature must be in includes of this feature (feature/feature.xml of this repo).
@@ -32,11 +32,11 @@ The update site can be used to perform a local installation.
 
 Steps to get development environment setup based on https://github.com/knime/knime-sdk-setup#sdk-setup:
 
-1. Install Java 8
+1. Install Java 17
 2. Install Eclipse for [RCP and RAP developers](https://www.eclipse.org/downloads/packages/release/2018-12/r/eclipse-ide-rcp-and-rap-developers)
-3. Configure Java 8 inside Eclipse Window > Preferences > Java > Installed JREs
+3. Configure Java 17 inside Eclipse Window > Preferences > Java > Installed JREs
 4. Import this repo as an Existing Maven project
-5. Activate target platform by going to Window > Preferences > Plug-in Development > Target Platform and check the `KNIME Analytics Platform (4.0) - nl.esciencecenter.e3dchem.targetplatform/KNIME-AP-4.0.target` target definition.
+5. Activate target platform by going to Window > Preferences > Plug-in Development > Target Platform and check the `KNIME Analytics Platform (5.1) - nl.esciencecenter.e3dchem.targetplatform/KNIME-AP-5.1.target` target definition.
 
 During import the Tycho Eclipse providers must be installed.
 
