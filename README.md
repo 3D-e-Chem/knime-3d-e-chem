@@ -1,7 +1,5 @@
 3D-e-Chem KNIME plugin for project category and splash screen.
 
-[![Build Status](https://travis-ci.org/3D-e-Chem/knime-3d-e-chem.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-3d-e-chem)
-
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
 # Adding a KNIME node
